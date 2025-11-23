@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.68\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"type\":2,\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2940508e7b67d75320e0",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2c75ae3431e37550dc3c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784.2739854562515,\"y\":99.68566737039643,\"z\":1,\"width\":300.258034248182,\"height\":299.0570021111893,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ft_sales_dia_orden.sale_date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"ft_sales_dia_orden\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"sale_date\"},\"Name\":\"ft_sales_dia_orden.sale_date\",\"NativeReferenceName\":\"sale_date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"sale_date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2012-06-28T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"ft_sales_dia_orden\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"sale_date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2012-06-28T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 299.06,
+          "width": 300.26,
+          "x": 784.27,
+          "y": 99.69,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"5f7467189ba689ee4413\",\"layouts\":[{\"id\":0,\"position\":{\"x\":79.26812104152006,\"y\":99.68566737039643,\"z\":0,\"width\":671.376964578935,\"height\":473.20666197513486,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"ft_sales_dia_orden.sale_date\",\"active\":true}],\"Y\":[{\"queryRef\":\"dim_sales_reason.CantidadVendida\"}],\"Series\":[{\"queryRef\":\"dim_sales_reason.reasontype\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"ft_sales_dia_orden\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_sales_reason\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"sale_date\"},\"Name\":\"ft_sales_dia_orden.sale_date\",\"NativeReferenceName\":\"sale_date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CantidadVendida\"},\"Name\":\"dim_sales_reason.CantidadVendida\",\"NativeReferenceName\":\"CantidadVendida\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"reasontype\"},\"Name\":\"dim_sales_reason.reasontype\",\"NativeReferenceName\":\"reasontype\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"sale_date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 473.21,
+          "width": 671.38,
+          "x": 79.27,
+          "y": 99.69,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
